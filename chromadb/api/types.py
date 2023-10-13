@@ -65,6 +65,7 @@ class GetResult(TypedDict):
 class QueryResult(TypedDict):
     ids: List[IDs]
     embeddings: Optional[List[List[Embedding]]]
+    query_embeddings: Optional[List[List[Embedding]]]
     documents: Optional[List[List[Document]]]
     metadatas: Optional[List[List[Metadata]]]
     distances: Optional[List[List[float]]]
